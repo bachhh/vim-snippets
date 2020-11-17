@@ -117,6 +117,15 @@ snippet forr "for range loop"
 		${0:${VISUAL}}
 	}
 
+snippet forchsw "for range loop character"
+	for ${0:ch} := range []byte(${1:word}) {
+		switch ${0:ch}{
+			case ${2:'a'}:
+			default:
+		}
+	}
+
+
 snippet fun "function"
 	func ${1:funcName}(${2}) ${3:error} {
 		${4}

@@ -1,0 +1,26 @@
+snippet let "Scheme let block" w
+(let (
+	(${1:var} (${2:varexp}))
+	)
+	${3:exp}
+)
+endsnippet
+
+snippet load "Scheme load block" w
+(load "${1:filescm}")
+endsnippet
+
+snippet cond "scheme cond" w
+(cond
+	(${1:condition} ${2:exp} )
+	(${3:condition} ${4:exp} )
+	(else ${5:else} )
+)
+endsnippet
+
+snippet if "scheme if" w
+(if ${1:condition}
+	${2: then}
+	${3: else}
+)
+endsnippet
